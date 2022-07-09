@@ -5,7 +5,7 @@
     "colab": {
       "name": "Untitled0.ipynb",
       "provenance": [],
-      "authorship_tag": "ABX9TyM+Diu/3LTkMpUI63r0zVYU",
+      "authorship_tag": "ABX9TyP6NmEIU23hgM3ph6tPNCmK",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -88,7 +88,7 @@
         "id": "bvx6OfK1nGPg",
         "outputId": "b25d2365-aa1f-45cf-cd76-256e2f079a72"
       },
-      "execution_count": 2,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -122,7 +122,7 @@
         "id": "SLjJhiignz0R",
         "outputId": "c34455aa-f728-485c-ad63-f89a0f622d7c"
       },
-      "execution_count": 3,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -155,7 +155,7 @@
         "id": "ybygks2mn8GY",
         "outputId": "23b8f216-b884-44b4-e67f-437bdadc9ad0"
       },
-      "execution_count": 4,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "error",
@@ -195,7 +195,7 @@
         "id": "PP6YEFSrojDX",
         "outputId": "f2ae8333-0a6b-4318-9b51-1ff407318cb3"
       },
-      "execution_count": 19,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -249,7 +249,7 @@
         "id": "CxhK_JCQp8KX",
         "outputId": "0fc8711d-e355-4f43-b98a-fc468af4b3e0"
       },
-      "execution_count": 7,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -275,7 +275,7 @@
         "id": "0hrel2rMqBRq",
         "outputId": "21146636-c069-4560-e0eb-07ac6d093fd8"
       },
-      "execution_count": 8,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -301,7 +301,7 @@
         "id": "lhk2SgEzqKVR",
         "outputId": "428b2d76-5869-4749-ffcd-f12e50a7e217"
       },
-      "execution_count": 12,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -323,7 +323,7 @@
       "metadata": {
         "id": "imqPjyw4pvrs"
       },
-      "execution_count": 6,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -355,7 +355,7 @@
         "id": "o_nSR-pQsTTa",
         "outputId": "f13a0052-749c-49d8-9c8d-ff570d65db9b"
       },
-      "execution_count": 20,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -443,7 +443,7 @@
       "metadata": {
         "id": "3lwRBYh9rT8y"
       },
-      "execution_count": 24,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -496,7 +496,7 @@
       "metadata": {
         "id": "A8Q6OocyvxnE"
       },
-      "execution_count": 27,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -514,7 +514,7 @@
         "id": "NevgHHoTwAn_",
         "outputId": "afd31356-97be-4ed1-95ca-45d866ab6dbf"
       },
-      "execution_count": 28,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -576,7 +576,7 @@
         "id": "FXqoZ66Rw4_x",
         "outputId": "c2d0bedb-12bf-41b5-f6ec-328630d58677"
       },
-      "execution_count": 35,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -606,7 +606,7 @@
         "weight=80\n",
         "height=1.83\n",
         "\n",
-        "bmi=80/(1.83**2)\n",
+        "bmi=weight/(height**2)\n",
         "bmi"
       ],
       "metadata": {
@@ -616,7 +616,7 @@
         "id": "bPcpafJFy36r",
         "outputId": "21e48dfa-bd82-4188-ef00-8f78bde34121"
       },
-      "execution_count": 47,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -652,7 +652,7 @@
         "id": "KBpGnpkG1GM3",
         "outputId": "2f5da2d6-f85e-4ad2-ce00-8405d0ee2bec"
       },
-      "execution_count": 50,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -682,19 +682,578 @@
       "metadata": {
         "id": "FiYbPn_32jbg"
       },
-      "execution_count": 51,
+      "execution_count": null,
       "outputs": []
     },
     {
       "cell_type": "code",
       "source": [
-        "def health(w,h):\n",
-        "  pass"
+        "def health1(w,h):\n",
+        "  bmi=w/(h**2)\n",
+        "  if bmi<18:\n",
+        "    print('體重過輕')\n",
+        "  elif bmi>24:\n",
+        "    print('體重過重')\n",
+        "  else:\n",
+        "    print('健康體位')\n"
       ],
       "metadata": {
         "id": "RDlU8OFt26ug"
       },
       "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "AevXGePq4W8P"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def health2(w,h):\n",
+        "  bmi=w/(h**2)\n",
+        "  if bmi<18:\n",
+        "    return('體重過輕')\n",
+        "  elif bmi>24:\n",
+        "    return('體重過重')\n",
+        "  else:\n",
+        "    return('健康體位')\n"
+      ],
+      "metadata": {
+        "id": "ritW2ejr4Xma"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "health1(88,1.73)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 167
+        },
+        "id": "OUp4UdM34snc",
+        "outputId": "bb667995-7d91-4be8-e849-1a3db02f76b0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-54-9643982b8a51>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mhealth1\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m88\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m1.73\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m: name 'health1' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "input('請輸入資料:')"
+      ],
+      "metadata": {
+        "id": "htEIw5v769lU",
+        "outputId": "f8134c06-7dd6-43a1-c3b1-6fe45f6d53e0",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 53
+        }
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "請輸入資料:123\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'123'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "FvYquzNW7uDH"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#用input取得的資料型態為:str\n",
+        "#如果如果\n",
+        "x=input('請輸入資料:')"
+      ],
+      "metadata": {
+        "id": "L2MypGZ07ovZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#用input取得的資料型態為:str\n",
+        "#如果\n",
+        "x=input('請輸入體重kg:')\n",
+        "y=input('請輸入身高m:')\n",
+        "health2(float(w),float(h))"
+      ],
+      "metadata": {
+        "id": "qdUHEnZ3821K",
+        "outputId": "04dbac26-5a5b-4d92-91be-175b8ade196a",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 236
+        }
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "請輸入體重kg:80\n",
+            "請輸入身高m:1.73\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-6-90cd9cba38df>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0mx\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'請輸入體重kg:'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0my\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'請輸入身高m:'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 5\u001b[0;31m \u001b[0mhealth2\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mh\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m: name 'health2' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# gradio使用簡介"
+      ],
+      "metadata": {
+        "id": "Ny0Jbiq77vj3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install gradio"
+      ],
+      "metadata": {
+        "id": "cpMIHMwu_n0c",
+        "outputId": "26dd1aa5-0ed7-4b58-fc22-74be953aa35d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/\n",
+            "Collecting gradio\n",
+            "  Downloading gradio-3.0.24-py3-none-any.whl (5.1 MB)\n",
+            "\u001b[K     |████████████████████████████████| 5.1 MB 5.2 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: Jinja2 in /usr/local/lib/python3.7/dist-packages (from gradio) (2.11.3)\n",
+            "Collecting aiohttp\n",
+            "  Downloading aiohttp-3.8.1-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.1 MB)\n",
+            "\u001b[K     |████████████████████████████████| 1.1 MB 52.7 MB/s \n",
+            "\u001b[?25hCollecting orjson\n",
+            "  Downloading orjson-3.7.7-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (272 kB)\n",
+            "\u001b[K     |████████████████████████████████| 272 kB 56.3 MB/s \n",
+            "\u001b[?25hCollecting pycryptodome\n",
+            "  Downloading pycryptodome-3.15.0-cp35-abi3-manylinux2010_x86_64.whl (2.3 MB)\n",
+            "\u001b[K     |████████████████████████████████| 2.3 MB 36.2 MB/s \n",
+            "\u001b[?25hCollecting uvicorn\n",
+            "  Downloading uvicorn-0.18.2-py3-none-any.whl (57 kB)\n",
+            "\u001b[K     |████████████████████████████████| 57 kB 3.6 MB/s \n",
+            "\u001b[?25hCollecting fsspec\n",
+            "  Downloading fsspec-2022.5.0-py3-none-any.whl (140 kB)\n",
+            "\u001b[K     |████████████████████████████████| 140 kB 56.0 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: pydantic in /usr/local/lib/python3.7/dist-packages (from gradio) (1.8.2)\n",
+            "Collecting analytics-python\n",
+            "  Downloading analytics_python-1.4.0-py2.py3-none-any.whl (15 kB)\n",
+            "Collecting pydub\n",
+            "  Downloading pydub-0.25.1-py2.py3-none-any.whl (32 kB)\n",
+            "Requirement already satisfied: matplotlib in /usr/local/lib/python3.7/dist-packages (from gradio) (3.2.2)\n",
+            "Collecting fastapi\n",
+            "  Downloading fastapi-0.78.0-py3-none-any.whl (54 kB)\n",
+            "\u001b[K     |████████████████████████████████| 54 kB 2.6 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: pandas in /usr/local/lib/python3.7/dist-packages (from gradio) (1.3.5)\n",
+            "Collecting python-multipart\n",
+            "  Downloading python-multipart-0.0.5.tar.gz (32 kB)\n",
+            "Requirement already satisfied: pillow in /usr/local/lib/python3.7/dist-packages (from gradio) (7.1.2)\n",
+            "Collecting markdown-it-py[linkify,plugins]\n",
+            "  Downloading markdown_it_py-2.1.0-py3-none-any.whl (84 kB)\n",
+            "\u001b[K     |████████████████████████████████| 84 kB 2.4 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from gradio) (2.23.0)\n",
+            "Collecting paramiko\n",
+            "  Downloading paramiko-2.11.0-py2.py3-none-any.whl (212 kB)\n",
+            "\u001b[K     |████████████████████████████████| 212 kB 45.0 MB/s \n",
+            "\u001b[?25hCollecting ffmpy\n",
+            "  Downloading ffmpy-0.3.0.tar.gz (4.8 kB)\n",
+            "Requirement already satisfied: numpy in /usr/local/lib/python3.7/dist-packages (from gradio) (1.21.6)\n",
+            "Collecting httpx\n",
+            "  Downloading httpx-0.23.0-py3-none-any.whl (84 kB)\n",
+            "\u001b[K     |████████████████████████████████| 84 kB 3.5 MB/s \n",
+            "\u001b[?25hCollecting frozenlist>=1.1.1\n",
+            "  Downloading frozenlist-1.3.0-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (144 kB)\n",
+            "\u001b[K     |████████████████████████████████| 144 kB 60.3 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: charset-normalizer<3.0,>=2.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (2.1.0)\n",
+            "Requirement already satisfied: typing-extensions>=3.7.4 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (4.1.1)\n",
+            "Collecting asynctest==0.13.0\n",
+            "  Downloading asynctest-0.13.0-py3-none-any.whl (26 kB)\n",
+            "Collecting aiosignal>=1.1.2\n",
+            "  Downloading aiosignal-1.2.0-py3-none-any.whl (8.2 kB)\n",
+            "Collecting async-timeout<5.0,>=4.0.0a3\n",
+            "  Downloading async_timeout-4.0.2-py3-none-any.whl (5.8 kB)\n",
+            "Collecting multidict<7.0,>=4.5\n",
+            "  Downloading multidict-6.0.2-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (94 kB)\n",
+            "\u001b[K     |████████████████████████████████| 94 kB 1.8 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.7/dist-packages (from aiohttp->gradio) (21.4.0)\n",
+            "Collecting yarl<2.0,>=1.0\n",
+            "  Downloading yarl-1.7.2-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (271 kB)\n",
+            "\u001b[K     |████████████████████████████████| 271 kB 30.5 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: idna>=2.0 in /usr/local/lib/python3.7/dist-packages (from yarl<2.0,>=1.0->aiohttp->gradio) (2.10)\n",
+            "Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.7/dist-packages (from analytics-python->gradio) (1.15.0)\n",
+            "Collecting monotonic>=1.5\n",
+            "  Downloading monotonic-1.6-py2.py3-none-any.whl (8.2 kB)\n",
+            "Requirement already satisfied: python-dateutil>2.1 in /usr/local/lib/python3.7/dist-packages (from analytics-python->gradio) (2.8.2)\n",
+            "Collecting backoff==1.10.0\n",
+            "  Downloading backoff-1.10.0-py2.py3-none-any.whl (31 kB)\n",
+            "Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.7/dist-packages (from requests->gradio) (2022.6.15)\n",
+            "Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.7/dist-packages (from requests->gradio) (3.0.4)\n",
+            "Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.7/dist-packages (from requests->gradio) (1.24.3)\n",
+            "Collecting starlette==0.19.1\n",
+            "  Downloading starlette-0.19.1-py3-none-any.whl (63 kB)\n",
+            "\u001b[K     |████████████████████████████████| 63 kB 1.6 MB/s \n",
+            "\u001b[?25hCollecting anyio<5,>=3.4.0\n",
+            "  Downloading anyio-3.6.1-py3-none-any.whl (80 kB)\n",
+            "\u001b[K     |████████████████████████████████| 80 kB 7.1 MB/s \n",
+            "\u001b[?25hCollecting sniffio>=1.1\n",
+            "  Downloading sniffio-1.2.0-py3-none-any.whl (10 kB)\n",
+            "Collecting httpcore<0.16.0,>=0.15.0\n",
+            "  Downloading httpcore-0.15.0-py3-none-any.whl (68 kB)\n",
+            "\u001b[K     |████████████████████████████████| 68 kB 4.6 MB/s \n",
+            "\u001b[?25hCollecting rfc3986[idna2008]<2,>=1.3\n",
+            "  Downloading rfc3986-1.5.0-py2.py3-none-any.whl (31 kB)\n",
+            "Collecting h11<0.13,>=0.11\n",
+            "  Downloading h11-0.12.0-py3-none-any.whl (54 kB)\n",
+            "\u001b[K     |████████████████████████████████| 54 kB 2.8 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: MarkupSafe>=0.23 in /usr/local/lib/python3.7/dist-packages (from Jinja2->gradio) (2.0.1)\n",
+            "Collecting mdurl~=0.1\n",
+            "  Downloading mdurl-0.1.1-py3-none-any.whl (10 kB)\n",
+            "Collecting mdit-py-plugins\n",
+            "  Downloading mdit_py_plugins-0.3.0-py3-none-any.whl (43 kB)\n",
+            "\u001b[K     |████████████████████████████████| 43 kB 1.9 MB/s \n",
+            "\u001b[?25hCollecting linkify-it-py~=1.0\n",
+            "  Downloading linkify_it_py-1.0.3-py3-none-any.whl (19 kB)\n",
+            "Collecting uc-micro-py\n",
+            "  Downloading uc_micro_py-1.0.1-py3-none-any.whl (6.2 kB)\n",
+            "Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib->gradio) (1.4.3)\n",
+            "Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.7/dist-packages (from matplotlib->gradio) (0.11.0)\n",
+            "Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /usr/local/lib/python3.7/dist-packages (from matplotlib->gradio) (3.0.9)\n",
+            "Requirement already satisfied: pytz>=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas->gradio) (2022.1)\n",
+            "Collecting pynacl>=1.0.1\n",
+            "  Downloading PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (856 kB)\n",
+            "\u001b[K     |████████████████████████████████| 856 kB 44.0 MB/s \n",
+            "\u001b[?25hCollecting bcrypt>=3.1.3\n",
+            "  Downloading bcrypt-3.2.2-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (62 kB)\n",
+            "\u001b[K     |████████████████████████████████| 62 kB 792 kB/s \n",
+            "\u001b[?25hCollecting cryptography>=2.5\n",
+            "  Downloading cryptography-37.0.4-cp36-abi3-manylinux_2_24_x86_64.whl (4.1 MB)\n",
+            "\u001b[K     |████████████████████████████████| 4.1 MB 42.2 MB/s \n",
+            "\u001b[?25hRequirement already satisfied: cffi>=1.1 in /usr/local/lib/python3.7/dist-packages (from bcrypt>=3.1.3->paramiko->gradio) (1.15.0)\n",
+            "Requirement already satisfied: pycparser in /usr/local/lib/python3.7/dist-packages (from cffi>=1.1->bcrypt>=3.1.3->paramiko->gradio) (2.21)\n",
+            "Requirement already satisfied: click>=7.0 in /usr/local/lib/python3.7/dist-packages (from uvicorn->gradio) (7.1.2)\n",
+            "Building wheels for collected packages: ffmpy, python-multipart\n",
+            "  Building wheel for ffmpy (setup.py) ... \u001b[?25l\u001b[?25hdone\n",
+            "  Created wheel for ffmpy: filename=ffmpy-0.3.0-py3-none-any.whl size=4712 sha256=ee7699a55e6b4ea6dd91ac94347ce700eaa139e1132a806d634fc4dea6588c84\n",
+            "  Stored in directory: /root/.cache/pip/wheels/13/e4/6c/e8059816e86796a597c6e6b0d4c880630f51a1fcfa0befd5e6\n",
+            "  Building wheel for python-multipart (setup.py) ... \u001b[?25l\u001b[?25hdone\n",
+            "  Created wheel for python-multipart: filename=python_multipart-0.0.5-py3-none-any.whl size=31678 sha256=136fde5ac79f0e72dc49d3431e4842fd8e1d5ebacaab43355c6ea93ab149c513\n",
+            "  Stored in directory: /root/.cache/pip/wheels/2c/41/7c/bfd1c180534ffdcc0972f78c5758f89881602175d48a8bcd2c\n",
+            "Successfully built ffmpy python-multipart\n",
+            "Installing collected packages: sniffio, mdurl, uc-micro-py, rfc3986, multidict, markdown-it-py, h11, frozenlist, anyio, yarl, starlette, pynacl, monotonic, mdit-py-plugins, linkify-it-py, httpcore, cryptography, bcrypt, backoff, asynctest, async-timeout, aiosignal, uvicorn, python-multipart, pydub, pycryptodome, paramiko, orjson, httpx, fsspec, ffmpy, fastapi, analytics-python, aiohttp, gradio\n",
+            "Successfully installed aiohttp-3.8.1 aiosignal-1.2.0 analytics-python-1.4.0 anyio-3.6.1 async-timeout-4.0.2 asynctest-0.13.0 backoff-1.10.0 bcrypt-3.2.2 cryptography-37.0.4 fastapi-0.78.0 ffmpy-0.3.0 frozenlist-1.3.0 fsspec-2022.5.0 gradio-3.0.24 h11-0.12.0 httpcore-0.15.0 httpx-0.23.0 linkify-it-py-1.0.3 markdown-it-py-2.1.0 mdit-py-plugins-0.3.0 mdurl-0.1.1 monotonic-1.6 multidict-6.0.2 orjson-3.7.7 paramiko-2.11.0 pycryptodome-3.15.0 pydub-0.25.1 pynacl-1.5.0 python-multipart-0.0.5 rfc3986-1.5.0 sniffio-1.2.0 starlette-0.19.1 uc-micro-py-1.0.1 uvicorn-0.18.2 yarl-1.7.2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def greet(name):\n",
+        "  return \"Hello \" + name + \"!\"\n",
+        "\n",
+        "greet(\"World\")"
+      ],
+      "metadata": {
+        "id": "8rjdlM2K_6Dd",
+        "outputId": "c377b319-e62a-4aba-8ed8-c8af67e7444d",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        }
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Hello World!'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import gradio"
+      ],
+      "metadata": {
+        "id": "xjG4l4frALz9"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "gradio.Interface(greet, \"text\", \"text\").launch(share=True)\n"
+      ],
+      "metadata": {
+        "id": "oJV0ygPfARSj",
+        "outputId": "ca5c3e51-4216-4480-80fe-72e1d28c743f",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 663
+        }
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Colab notebook detected. To show errors in colab notebook, set `debug=True` in `launch()`\n",
+            "Running on public URL: https://36342.gradio.app\n",
+            "\n",
+            "This share link expires in 72 hours. For free permanent hosting, check out Spaces (https://huggingface.co/spaces)\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<div><iframe src=\"https://36342.gradio.app\" width=\"900\" height=\"500\" allow=\"autoplay; camera; microphone;\" frameborder=\"0\" allowfullscreen></iframe></div>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(<gradio.routes.App at 0x7ff6f9af8110>,\n",
+              " 'http://127.0.0.1:7860/',\n",
+              " 'https://36342.gradio.app')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def health2(w, h):\n",
+        "  bmi = float(w)/(float(h)**2)\n",
+        "  if bmi < 18:\n",
+        "    return \"體重過輕\"\n",
+        "  elif bmi > 24:\n",
+        "    return \"體重過重\"\n",
+        "  else:\n",
+        "    return \"健康體位\""
+      ],
+      "metadata": {
+        "id": "n6LWjlH0Cjxe"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "health2(88,1.73)"
+      ],
+      "metadata": {
+        "id": "uKI_zmOcEPBr",
+        "outputId": "34c21214-27dc-4646-8f58-118af9947fa3",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        }
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'體重過重'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "gradio.Interface(health2, [\"text\", \"text\"],\"text\",title=\"判斷體位狀況\").launch(share=True)"
+      ],
+      "metadata": {
+        "id": "5ba_Eal5CCsL",
+        "outputId": "c1461325-f76a-4cfa-d1b2-79a17e446ca9",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 663
+        }
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Colab notebook detected. To show errors in colab notebook, set `debug=True` in `launch()`\n",
+            "Running on public URL: https://55713.gradio.app\n",
+            "\n",
+            "This share link expires in 72 hours. For free permanent hosting, check out Spaces (https://huggingface.co/spaces)\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<div><iframe src=\"https://55713.gradio.app\" width=\"900\" height=\"500\" allow=\"autoplay; camera; microphone;\" frameborder=\"0\" allowfullscreen></iframe></div>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(<gradio.routes.App at 0x7ff6f920e150>,\n",
+              " 'http://127.0.0.1:7861/',\n",
+              " 'https://55713.gradio.app')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def health3(w, h):\n",
+        "  bmi = float(w)/(float(h)**2)\n",
+        "  if bmi < 18:\n",
+        "    return \"體重過輕\"\n",
+        "  elif bmi > 24:\n",
+        "    return \"體重過重\"\n",
+        "  else:\n",
+        "    return \"健康體位\""
+      ],
+      "metadata": {
+        "id": "ug6aU0lLGjvi"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import requests"
+      ],
+      "metadata": {
+        "id": "3-B40t82G0SK"
+      },
+      "execution_count": 24,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def lookup(word):\n",
+        "  url = f\"https://www.moedict.tw/uni/{word}\"\n",
+        "  return requests.get(url).json()"
+      ],
+      "metadata": {
+        "id": "Xhr_EpPTG6xq"
+      },
+      "execution_count": 23,
       "outputs": []
     }
   ]
