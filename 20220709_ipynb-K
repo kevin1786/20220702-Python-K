@@ -5,7 +5,7 @@
     "colab": {
       "name": "Untitled0.ipynb",
       "provenance": [],
-      "authorship_tag": "ABX9TyPDrF/GrmBLxUDLChR4ET9Z",
+      "authorship_tag": "ABX9TyOpJhl0ywo9jGSczAchqGSC",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -1262,12 +1262,12 @@
         "gradio.Interface(lookup, \"text\", \"text\", title=\"萌典API使用範例\").launch(share=True)"
       ],
       "metadata": {
-        "id": "XVLlFhhPVtG5",
-        "outputId": "66e7a63a-ddd6-4db4-f77e-4f6b92ed671b",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 663
-        }
+        },
+        "id": "XVLlFhhPVtG5",
+        "outputId": "66e7a63a-ddd6-4db4-f77e-4f6b92ed671b"
       },
       "execution_count": 28,
       "outputs": [
@@ -1304,6 +1304,83 @@
           },
           "metadata": {},
           "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#爬蟲簡介"
+      ],
+      "metadata": {
+        "id": "J32ohNI3fAy0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import requests"
+      ],
+      "metadata": {
+        "id": "65laQYeYfIg_"
+      },
+      "execution_count": 29,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "url=\"https://victorgau.github.io/khpy_web_intro/html_only.html\""
+      ],
+      "metadata": {
+        "id": "u2ylpUKVfZ5t"
+      },
+      "execution_count": 30,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "r = requests.get(url)"
+      ],
+      "metadata": {
+        "id": "2zwsAVkgfhWF"
+      },
+      "execution_count": 33,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(r.text)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ibVK_st4fr-u",
+        "outputId": "4c24409d-9c79-4001-8d9e-ffcac8336f79"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<!DOCTYPE html>\n",
+            "<html>\n",
+            "<head>\n",
+            "    <title>HTML範例</title>\n",
+            "</head>\n",
+            "<body>\n",
+            "\n",
+            "<h1>哈囉！HTML！</h1>\n",
+            "\n",
+            "<img src=\"ninja.jpg\" />\n",
+            "\n",
+            "</body>\n",
+            "</html>\n"
+          ]
         }
       ]
     }
