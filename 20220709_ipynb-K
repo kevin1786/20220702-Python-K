@@ -5,7 +5,7 @@
     "colab": {
       "name": "Untitled0.ipynb",
       "provenance": [],
-      "authorship_tag": "ABX9TyP6NmEIU23hgM3ph6tPNCmK",
+      "authorship_tag": "ABX9TyPDrF/GrmBLxUDLChR4ET9Z",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -766,12 +766,12 @@
         "input('請輸入資料:')"
       ],
       "metadata": {
-        "id": "htEIw5v769lU",
-        "outputId": "f8134c06-7dd6-43a1-c3b1-6fe45f6d53e0",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 53
-        }
+        },
+        "id": "htEIw5v769lU",
+        "outputId": "f8134c06-7dd6-43a1-c3b1-6fe45f6d53e0"
       },
       "execution_count": 4,
       "outputs": [
@@ -831,12 +831,12 @@
         "health2(float(w),float(h))"
       ],
       "metadata": {
-        "id": "qdUHEnZ3821K",
-        "outputId": "04dbac26-5a5b-4d92-91be-175b8ade196a",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 236
-        }
+        },
+        "id": "qdUHEnZ3821K",
+        "outputId": "04dbac26-5a5b-4d92-91be-175b8ade196a"
       },
       "execution_count": 6,
       "outputs": [
@@ -878,11 +878,11 @@
         "!pip install gradio"
       ],
       "metadata": {
-        "id": "cpMIHMwu_n0c",
-        "outputId": "26dd1aa5-0ed7-4b58-fc22-74be953aa35d",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "cpMIHMwu_n0c",
+        "outputId": "26dd1aa5-0ed7-4b58-fc22-74be953aa35d"
       },
       "execution_count": 7,
       "outputs": [
@@ -1029,12 +1029,12 @@
         "greet(\"World\")"
       ],
       "metadata": {
-        "id": "8rjdlM2K_6Dd",
-        "outputId": "c377b319-e62a-4aba-8ed8-c8af67e7444d",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 36
-        }
+        },
+        "id": "8rjdlM2K_6Dd",
+        "outputId": "c377b319-e62a-4aba-8ed8-c8af67e7444d"
       },
       "execution_count": 8,
       "outputs": [
@@ -1070,12 +1070,12 @@
         "gradio.Interface(greet, \"text\", \"text\").launch(share=True)\n"
       ],
       "metadata": {
-        "id": "oJV0ygPfARSj",
-        "outputId": "ca5c3e51-4216-4480-80fe-72e1d28c743f",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 663
-        }
+        },
+        "id": "oJV0ygPfARSj",
+        "outputId": "ca5c3e51-4216-4480-80fe-72e1d28c743f"
       },
       "execution_count": 12,
       "outputs": [
@@ -1139,12 +1139,12 @@
         "health2(88,1.73)"
       ],
       "metadata": {
-        "id": "uKI_zmOcEPBr",
-        "outputId": "34c21214-27dc-4646-8f58-118af9947fa3",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 36
-        }
+        },
+        "id": "uKI_zmOcEPBr",
+        "outputId": "34c21214-27dc-4646-8f58-118af9947fa3"
       },
       "execution_count": 16,
       "outputs": [
@@ -1169,12 +1169,12 @@
         "gradio.Interface(health2, [\"text\", \"text\"],\"text\",title=\"判斷體位狀況\").launch(share=True)"
       ],
       "metadata": {
-        "id": "5ba_Eal5CCsL",
-        "outputId": "c1461325-f76a-4cfa-d1b2-79a17e446ca9",
         "colab": {
           "base_uri": "https://localhost:8080/",
           "height": 663
-        }
+        },
+        "id": "5ba_Eal5CCsL",
+        "outputId": "c1461325-f76a-4cfa-d1b2-79a17e446ca9"
       },
       "execution_count": 15,
       "outputs": [
@@ -1240,7 +1240,7 @@
       "metadata": {
         "id": "3-B40t82G0SK"
       },
-      "execution_count": 24,
+      "execution_count": 25,
       "outputs": []
     },
     {
@@ -1253,8 +1253,59 @@
       "metadata": {
         "id": "Xhr_EpPTG6xq"
       },
-      "execution_count": 23,
+      "execution_count": 27,
       "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "gradio.Interface(lookup, \"text\", \"text\", title=\"萌典API使用範例\").launch(share=True)"
+      ],
+      "metadata": {
+        "id": "XVLlFhhPVtG5",
+        "outputId": "66e7a63a-ddd6-4db4-f77e-4f6b92ed671b",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 663
+        }
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Colab notebook detected. To show errors in colab notebook, set `debug=True` in `launch()`\n",
+            "Running on public URL: https://55821.gradio.app\n",
+            "\n",
+            "This share link expires in 72 hours. For free permanent hosting, check out Spaces (https://huggingface.co/spaces)\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<div><iframe src=\"https://55821.gradio.app\" width=\"900\" height=\"500\" allow=\"autoplay; camera; microphone;\" frameborder=\"0\" allowfullscreen></iframe></div>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(<gradio.routes.App at 0x7ff6f7146850>,\n",
+              " 'http://127.0.0.1:7862/',\n",
+              " 'https://55821.gradio.app')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
     }
   ]
 }
