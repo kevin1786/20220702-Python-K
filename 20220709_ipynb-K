@@ -1,0 +1,701 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyM+Diu/3LTkMpUI63r0zVYU",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kevin1786/20220702-Python-K/blob/main/20220709_ipynb-K\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "igmBXSVmgKcd"
+      },
+      "outputs": [],
+      "source": [
+        "#20220709\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##初學者需要知道的概念\n",
+        "\n",
+        "*資料型態\n",
+        "  *int\n",
+        "  *float\n",
+        "  *bool\n",
+        "  *str\n",
+        "*資料型態\n",
+        "  *list\n",
+        "  *tuple\n",
+        "  *dict\n",
+        "  *set\n",
+        "*基礎語法\n",
+        "  *"
+      ],
+      "metadata": {
+        "id": "ayEyUAYEhyWL"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##loops:\n",
+        "###城市區塊(裡面可以使用上面的變數)\n",
+        "backtick`\n",
+        "```python\n",
+        "for 變數in資料結構\n"
+      ],
+      "metadata": {
+        "id": "iFNSaQB5mO4s"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(3):\n",
+        "  print(\"城市區塊開始\")\n",
+        "  print(i)\n",
+        "  print(\"城市區塊節數\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bvx6OfK1nGPg",
+        "outputId": "b25d2365-aa1f-45cf-cd76-256e2f079a72"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "城市區塊開始\n",
+            "0\n",
+            "城市區塊節數\n",
+            "城市區塊開始\n",
+            "1\n",
+            "城市區塊節數\n",
+            "城市區塊開始\n",
+            "2\n",
+            "城市區塊節數\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(3):\n",
+        "  print(\"城市區塊開始\")\n",
+        "  print(i)\n",
+        "print(\"城市區塊節數\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SLjJhiignz0R",
+        "outputId": "c34455aa-f728-485c-ad63-f89a0f622d7c"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "城市區塊開始\n",
+            "0\n",
+            "城市區塊開始\n",
+            "1\n",
+            "城市區塊開始\n",
+            "2\n",
+            "城市區塊節數\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(3):\n",
+        "print(\"城市區塊開始\")\n",
+        "print(i)\n",
+        "print(\"城市區塊節數\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 132
+        },
+        "id": "ybygks2mn8GY",
+        "outputId": "23b8f216-b884-44b4-e67f-437bdadc9ad0"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "IndentationError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-4-66fc1299f8b0>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    print(\"城市區塊開始\")\u001b[0m\n\u001b[0m        ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m expected an indented block\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##while loops\n",
+        "### 基本語法\n",
+        "```python\n",
+        "while 條件式\n",
+        "  城市區塊"
+      ],
+      "metadata": {
+        "id": "Dauuu-dPoDK8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=0\n",
+        "while x<10:\n",
+        "  print(x)\n",
+        "  x=x+1\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PP6YEFSrojDX",
+        "outputId": "f2ae8333-0a6b-4318-9b51-1ff407318cb3"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "##寫一個九九乘法表\n",
+        "可以用for迴圈或while迴圈做作看\n"
+      ],
+      "metadata": {
+        "id": "WH680SjWpTz5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(5):\n",
+        "  "
+      ],
+      "metadata": {
+        "id": "yW_4OxZdpjJz"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list(range(5))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CxhK_JCQp8KX",
+        "outputId": "0fc8711d-e355-4f43-b98a-fc468af4b3e0"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0, 1, 2, 3, 4]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list(range(2,10))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0hrel2rMqBRq",
+        "outputId": "21146636-c069-4560-e0eb-07ac6d093fd8"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[2, 3, 4, 5, 6, 7, 8, 9]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list(range(2,10))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lhk2SgEzqKVR",
+        "outputId": "428b2d76-5869-4749-ffcd-f12e50a7e217"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[2, 3, 4, 5, 6, 7, 8, 9]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "range?"
+      ],
+      "metadata": {
+        "id": "imqPjyw4pvrs"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# hint\n",
+        "for i in range(2,10):\n",
+        "  for j in range(2,10):\n",
+        "    print(i,\"x\",j)"
+      ],
+      "metadata": {
+        "id": "zjJ5xwQrqc5O"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# hint\n",
+        "for i in range(2,10):\n",
+        "  for j in range(2,10):\n",
+        "    print(i,\"x\",j,\"=\",i*j)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "o_nSR-pQsTTa",
+        "outputId": "f13a0052-749c-49d8-9c8d-ff570d65db9b"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2 x 2 = 4\n",
+            "2 x 3 = 6\n",
+            "2 x 4 = 8\n",
+            "2 x 5 = 10\n",
+            "2 x 6 = 12\n",
+            "2 x 7 = 14\n",
+            "2 x 8 = 16\n",
+            "2 x 9 = 18\n",
+            "3 x 2 = 6\n",
+            "3 x 3 = 9\n",
+            "3 x 4 = 12\n",
+            "3 x 5 = 15\n",
+            "3 x 6 = 18\n",
+            "3 x 7 = 21\n",
+            "3 x 8 = 24\n",
+            "3 x 9 = 27\n",
+            "4 x 2 = 8\n",
+            "4 x 3 = 12\n",
+            "4 x 4 = 16\n",
+            "4 x 5 = 20\n",
+            "4 x 6 = 24\n",
+            "4 x 7 = 28\n",
+            "4 x 8 = 32\n",
+            "4 x 9 = 36\n",
+            "5 x 2 = 10\n",
+            "5 x 3 = 15\n",
+            "5 x 4 = 20\n",
+            "5 x 5 = 25\n",
+            "5 x 6 = 30\n",
+            "5 x 7 = 35\n",
+            "5 x 8 = 40\n",
+            "5 x 9 = 45\n",
+            "6 x 2 = 12\n",
+            "6 x 3 = 18\n",
+            "6 x 4 = 24\n",
+            "6 x 5 = 30\n",
+            "6 x 6 = 36\n",
+            "6 x 7 = 42\n",
+            "6 x 8 = 48\n",
+            "6 x 9 = 54\n",
+            "7 x 2 = 14\n",
+            "7 x 3 = 21\n",
+            "7 x 4 = 28\n",
+            "7 x 5 = 35\n",
+            "7 x 6 = 42\n",
+            "7 x 7 = 49\n",
+            "7 x 8 = 56\n",
+            "7 x 9 = 63\n",
+            "8 x 2 = 16\n",
+            "8 x 3 = 24\n",
+            "8 x 4 = 32\n",
+            "8 x 5 = 40\n",
+            "8 x 6 = 48\n",
+            "8 x 7 = 56\n",
+            "8 x 8 = 64\n",
+            "8 x 9 = 72\n",
+            "9 x 2 = 18\n",
+            "9 x 3 = 27\n",
+            "9 x 4 = 36\n",
+            "9 x 5 = 45\n",
+            "9 x 6 = 54\n",
+            "9 x 7 = 63\n",
+            "9 x 8 = 72\n",
+            "9 x 9 = 81\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i=2\n",
+        "j=2\n",
+        "while x<10:\n",
+        "  while j<10:\n",
+        "    print(i,\"x\",j,\"=\",i*j)\n",
+        "    j=j+1\n",
+        "  i=i+1"
+      ],
+      "metadata": {
+        "id": "3lwRBYh9rT8y"
+      },
+      "execution_count": 24,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# 條件式 (if statement)\n",
+        "基本語法\n",
+        "\n",
+        "語法一:\n",
+        "\n",
+        "使用條件式來決定城市區塊是否被執行\n",
+        "\n",
+        "```python\n",
+        "if 條件式:\n",
+        "  城市區塊1\n",
+        "else:\n",
+        "  城市區塊2\n",
+        "\n",
+        "語法二:\n",
+        "\n",
+        "使用條件式來決定執行城市區塊1還是城市區塊2\n",
+        "\n",
+        "```python\n",
+        "if 條件式:\n",
+        "  城市區塊1\n",
+        "else:\n",
+        "  城市區塊2\n",
+        "\n",
+        "\n",
+        "語法三:\n",
+        "\n",
+        "```python\n",
+        "if 條件式:\n",
+        "  城市區塊1\n",
+        "else:\n",
+        "  城市區塊2"
+      ],
+      "metadata": {
+        "id": "fuEoFQX6uIw1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=1\n",
+        "b=2\n",
+        "if a>b:\n",
+        "  print(\"a>b\")"
+      ],
+      "metadata": {
+        "id": "A8Q6OocyvxnE"
+      },
+      "execution_count": 27,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=3\n",
+        "b=2\n",
+        "if a>b:\n",
+        "  print(\"a>b\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NevgHHoTwAn_",
+        "outputId": "afd31356-97be-4ed1-95ca-45d866ab6dbf"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a>b\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=3\n",
+        "b=2\n",
+        "if a>b:\n",
+        "  print(\"a>b\")\n",
+        "else:\n",
+        "  print(\"a<=b\")"
+      ],
+      "metadata": {
+        "id": "gfycoSynv8zC"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "語法三:\n",
+        "\n",
+        "```python\n",
+        "if 條件式:\n",
+        "  城市區塊1\n",
+        "else:\n",
+        "  城市區塊2"
+      ],
+      "metadata": {
+        "id": "_BWtCjF8w1BU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=1\n",
+        "b=2\n",
+        "\n",
+        "if a>b:\n",
+        "  print(\"a>b\")\n",
+        "elif a<b:\n",
+        "  print('a<b')\n",
+        "else:\n",
+        "  print(\"a=b\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FXqoZ66Rw4_x",
+        "outputId": "c2d0bedb-12bf-41b5-f6ec-328630d58677"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a<b\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## 練習\n",
+        "請計算BMI並判斷體位\n",
+        "$$ bmi=\\{體重(公斤)}{身高(公尺)^}$$\n",
+        "\n",
+        "|條件|條件|"
+      ],
+      "metadata": {
+        "id": "xVyJeFqMx9Pb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "weight=80\n",
+        "height=1.83\n",
+        "\n",
+        "bmi=80/(1.83**2)\n",
+        "bmi"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bPcpafJFy36r",
+        "outputId": "21e48dfa-bd82-4188-ef00-8f78bde34121"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "23.888440980620498"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 47
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "weight=83\n",
+        "height=1.73\n",
+        "bmi=83/(1.73**2)\n",
+        "\n",
+        "if bmi<18:\n",
+        "  print('體重過輕')\n",
+        "elif bmi>24:\n",
+        "  print('體重過重')\n",
+        "else:\n",
+        "  print('健康體位')\n",
+        "bmi"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KBpGnpkG1GM3",
+        "outputId": "2f5da2d6-f85e-4ad2-ce00-8405d0ee2bec"
+      },
+      "execution_count": 50,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "體重過重\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "27.732299776136855"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 50
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def health(w,h):\n",
+        "  pass"
+      ],
+      "metadata": {
+        "id": "FiYbPn_32jbg"
+      },
+      "execution_count": 51,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def health(w,h):\n",
+        "  pass"
+      ],
+      "metadata": {
+        "id": "RDlU8OFt26ug"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
